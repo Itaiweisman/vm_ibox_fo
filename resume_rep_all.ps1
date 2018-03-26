@@ -11,5 +11,5 @@ $source, $target=$ds.Split(' ')
 write-host "Trying to change role of ds is $target "
 infinishell --user $user_ibox2 --password $password_ibox2 -c "replica.change_role local_dataset=$target --yes" $ibox2_to_replicte_to
 write-host "Trying to replicate from $source  "
-infinishell-ve/bin/infinishell --user $user_ibox1 --password $password_ibox1 -c "replica.resume local_dataset=$source --yes" $ibox1_to_replicte_from
+infinishell --user $user_ibox1 --password $password_ibox1 -c "replica.resume local_dataset=$source --yes" $ibox1_to_replicte_from
  }
